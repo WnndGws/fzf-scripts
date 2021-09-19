@@ -1,5 +1,8 @@
 # fzf-scripts
 
+Forked from DanielFGray/fzf-scripts on 2021-09-19
+Edited scripts for my system
+
 This is a collection of scripts I've written that use [fzf](https://github.com/junegunn/fzf)
 
 Almost all of them require various tools from coreutils like `awk` `sed` `cut`, and probably make use of GNU extensions.
