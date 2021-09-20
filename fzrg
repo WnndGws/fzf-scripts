@@ -12,7 +12,7 @@ done
 shift $(( OPTIND - 1 ))
 unset x OPTARG OPTIND
 
-rg --color=always -n ${list_files:+-l} "$1" 2> /dev/null |
+rg --hidden --pcre2 --color=always -n ${list_files:+-l} "$1" 2> /dev/null |
 fzf -d: \
 --ansi \
 --query="$1" \
