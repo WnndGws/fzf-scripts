@@ -89,7 +89,7 @@ arch() {
   local search packages
   search='pacman'
   [[ -n "$1" ]] && search=$(select_from 'pikaur' 'pacaur' 'trizen' 'yaourt' 'packer' 'apacman' 'pacman')
-  packages=$(fzf --preview="$search -Si {2}" \
+  packages=$(fzf --preview-window=down --preview="$search -Si {2}" \
     < <( $search -Ss "$1" |
       gawk '{
         getline descr;
